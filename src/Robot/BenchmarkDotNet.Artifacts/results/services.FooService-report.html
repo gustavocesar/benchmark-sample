@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>services.FooService-20210622-085612</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.0, OS=Windows 10.0.19041.1052 (2004/May2020Update/20H1)
+Intel Core i7-3517U CPU 1.90GHz (Ivy Bridge), 1 CPU, 4 logical and 2 physical cores
+.NET SDK=5.0.203
+  [Host]     : .NET 5.0.6 (5.0.621.22011), X64 RyuJIT
+  DefaultJob : .NET 5.0.6 (5.0.621.22011), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>  Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>TestFoo01</td><td>1,008.643 ms</td><td>4.8535 ms</td><td>4.5400 ms</td><td>-</td><td>-</td><td>-</td><td>856 B</td>
+</tr><tr><td>TestFoo02</td><td>2,009.543 ms</td><td>4.2325 ms</td><td>3.9591 ms</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr><tr><td>TestFoo03</td><td>4.508 ms</td><td>0.0885 ms</td><td>0.1119 ms</td><td>421.8750</td><td>281.2500</td><td>281.2500</td><td>2,648,616 B</td>
+</tr></tbody></table>
+</body>
+</html>
