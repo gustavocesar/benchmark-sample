@@ -22,4 +22,6 @@ public class FooService
             list.Add(i.ToString());
         }
     }
+
+    private void Teste() {}
 }
