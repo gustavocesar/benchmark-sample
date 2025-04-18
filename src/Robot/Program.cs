@@ -1,14 +1,12 @@
-﻿using System;
-using BenchmarkDotNet.Running;
+﻿using BenchmarkDotNet.Running;
 using services;
 
-namespace robot
+namespace robot;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            BenchmarkRunner.Run<FooService>();
-        }
+        BenchmarkRunner.Run<FooService>();
     }
 }
